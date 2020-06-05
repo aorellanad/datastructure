@@ -10,7 +10,7 @@ package esctructura_de_datos;
  * @author Steven
  */
 public class Quicksort {
-     public static void main(String[] args){
+    /* public static void main(String[] args){
         double [] a={7,4,1,5,3,2};
         ImprimirArr(a);
         OrdQuickSort(a,0,a.length-1);
@@ -22,43 +22,47 @@ public class Quicksort {
             System.out.print("\t"+a[i]);
         }
         System.out.println("");
+    }*/
+    
+    public static void intercambiar(int rNumbers[], int i , int j){
+        int aux= rNumbers[i];
+        rNumbers[i]=rNumbers[j];
+        rNumbers[j]=aux;
     }
     
-    public static void intercambiar(double[]a, int i , int j){
-        double aux= a[i];
-        a[i]=a[j];
-        a[j]=aux;
-    }
-    
-    private static void OrdQuickSort(double a[], int primero, int ultimo){
+    private static void OrdQuickSort(int rNumbers[], int primero, int ultimo){
     int i, j, central;
     double pivote;
     central=(primero+ultimo)/2;
-    pivote= a [central];
+    pivote= rNumbers [central];
     i=primero;
     j=ultimo;
     
         do {
-            while(a[i]<pivote){
+            while(rNumbers[i]<pivote){
                 i++;
             }
-            while(a[j]>pivote){
+            while(rNumbers[j]>pivote){
                 j--;
             }
             if (i<=j) {
-                intercambiar(a,i,j);
+                intercambiar(rNumbers,i,j);
                 i++;
                 j--;
             }
         } while (i<=j);
         if (primero<j) {
-            OrdQuickSort(a,primero,j); //mismo proceso con sublista izqda
+            OrdQuickSort(rNumbers,primero,j); //mismo proceso con sublista izqda
             
         }
         if (i<ultimo) {
-            OrdQuickSort(a,i,ultimo); //mismo proceso con sublista drcha
+            OrdQuickSort(rNumbers,i,ultimo); //mismo proceso con sublista drcha
             
         }
+    }
+    public int toSort(int rNumbers[]){
+        
+        return rNumbers;
     }
     
 }
