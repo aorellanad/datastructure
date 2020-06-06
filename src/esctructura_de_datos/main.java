@@ -9,6 +9,7 @@ public class main {
         Direct_Insertion Di=new Direct_Insertion();
         Seleccion select=new Seleccion();
         Merge_sort Ms = new Merge_sort();
+        Quick_sort Qs = new Quick_sort();
         // print messy array
         System.out.println(Arrays.toString(rNumbers));
         // print sort array
@@ -20,5 +21,7 @@ public class main {
         System.out.println(Arrays.toString(select.toSort(rNumbers)));
         System.out.println("Merge sort");
         System.out.println(Arrays.toString(Ms.toSort(rNumbers)));
+        System.out.println("Quick sort");
+        System.out.println(Arrays.toString(Qs.toSort(rNumbers)));
     }
 }
