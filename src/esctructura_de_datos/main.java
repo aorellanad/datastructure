@@ -11,8 +11,11 @@ public class main {
         // print messy array
         System.out.println(Arrays.toString(rNumbers));
         // print sort array
+        System.out.println("Burbuja");
         System.out.println(Arrays.toString(bubble.toSort(rNumbers)));
+        System.out.println("Insercion");
         System.out.println(Arrays.toString(Di.toSort(rNumbers)));
+        System.out.println("Seleccion");
         System.out.println(Arrays.toString(select.toSort(rNumbers)));
         
     }
