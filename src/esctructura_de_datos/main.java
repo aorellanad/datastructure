@@ -8,6 +8,7 @@ public class main {
         Bubble bubble = new Bubble();
         Direct_Insertion Di=new Direct_Insertion();
         Seleccion select=new Seleccion();
+        Shell_sort Sh = new Shell_sort();
         Merge_sort Ms = new Merge_sort();
         Quick_sort Qs = new Quick_sort();
         // print messy array
@@ -19,6 +20,8 @@ public class main {
         System.out.println(Arrays.toString(Di.toSort(rNumbers)));
         System.out.println("Seleccion");   
         System.out.println(Arrays.toString(select.toSort(rNumbers)));
+        System.out.println("Shell sort");
+        System.out.println(Arrays.toString(Sh.toSort(rNumbers)));
         System.out.println("Merge sort");
         System.out.println(Arrays.toString(Ms.toSort(rNumbers)));
         System.out.println("Quick sort");
