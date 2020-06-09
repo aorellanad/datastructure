@@ -7,14 +7,11 @@ package esctructura_de_datos;
  */
 public class Merge_sort {
     public int[] toSort(int rNumbers[]) {
-        mergeSort(rNumbers);
-        
-      return rNumbers;
+        int[] tmp = new int[rNumbers.length];
+        mergeSort(rNumbers, tmp, 0, rNumbers.length - 1);
+        return rNumbers;
     }
-    public static void mergeSort(int array[]) {
-        int[] tmp = new int[array.length];
-        mergeSort(array, tmp, 0, array.length - 1);
-    }
+
     private static void mergeSort(int[] a, int[] tmp, int left, int right) {
         if (left < right) {
             int centre = (left + right) / 2;
