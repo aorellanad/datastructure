@@ -2,12 +2,12 @@
 this repo contains to exercises worked at tutorship of subject "Estructura de datos" in period 56th
 
 ## Sort methods
-- [ ] Bubble
-- [ ] Direct selection
-- [ ] Direct insertion
-- [ ] Shell sort
-- [ ] Quick sort
-- [ ] Merge sort
+- [x] Bubble
+- [x] Direct selection
+- [x] Direct insertion
+- [x] Shell sort
+- [x] Quick sort
+- [x] Merge sort
 
 ## Search methods
 - [ ] Sequential search
