@@ -1,6 +1,7 @@
 package esctructura_de_datos;
 
 import java.util.Arrays;
+import metodos_busqueda.Secuencial;
 
 public class main {
     public static void main(String[] args) {
@@ -11,6 +12,8 @@ public class main {
         Shell_sort Sh = new Shell_sort();
         Merge_sort Ms = new Merge_sort();
         Quick_sort Qs = new Quick_sort();
+        //Metodos de Busqueda
+        Secuencial Sc = new Secuencial();
         // print messy array
         System.out.println(Arrays.toString(rNumbers));
         // print sort array
@@ -26,5 +29,8 @@ public class main {
         System.out.println(Arrays.toString(Ms.toSort(rNumbers)));
         System.out.println("Quick sort");
         System.out.println(Arrays.toString(Qs.toSort(rNumbers)));
+        // print Metodos de Busqueda
+        System.out.println("Secuencial");
+        System.out.println(Sc.getPosition(rNumbers, 12));
     }
 }
