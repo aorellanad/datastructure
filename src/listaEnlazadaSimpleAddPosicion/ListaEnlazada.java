@@ -1,4 +1,4 @@
-package listaEnlazadaSimpleERROR;
+package listaEnlazadaSimpleAddPosicion;
 public class ListaEnlazada<Object> {
     Nodo<Object> primero;
 
@@ -152,6 +152,8 @@ public class ListaEnlazada<Object> {
                 
                 contador++;
                 auxRecorrido = auxRecorrido.getSiguiente();//Actualizo siguiente
+                
+                
             }
         }
     }

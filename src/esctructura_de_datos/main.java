@@ -1,10 +1,16 @@
 package esctructura_de_datos;
 
+import ListaEnlazadaSimple.ListaEnlazada;
+import ListaEnlazadaSimple.Persona;
 import java.util.Arrays;
+import java.util.Scanner;
 import metodos_busqueda.Binaria;
 import metodos_busqueda.Secuencial;
 
 public class main {
+     Scanner leer = new Scanner(System.in);
+    ListaEnlazada<Persona> Lista = new ListaEnlazada<>();//Crear la lista
+    
     public static void main(String[] args) {
         int[] rNumbers = {5,89,12,4,3};
         Bubble bubble = new Bubble();

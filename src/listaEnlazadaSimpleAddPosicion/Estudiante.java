@@ -1,4 +1,4 @@
-package listaEnlazadaSimpleERROR;
+package listaEnlazadaSimpleAddPosicion;
 
 public class Estudiante {
     private String Cedula;

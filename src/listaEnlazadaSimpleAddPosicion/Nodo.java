@@ -1,4 +1,4 @@
-package listaEnlazadaSimpleERROR;
+package listaEnlazadaSimpleAddPosicion;
 
 public class Nodo<Object> {
     Object dato;//informacion o el dato que lleva el Nodo
@@ -21,7 +21,9 @@ public class Nodo<Object> {
         this.anterior= anterior;
     }
 
-    Nodo(Estudiante dato, Nodo<Estudiante> auxRecorrido) {
+    Nodo(Object dato, Nodo<Object> auxRecorrido ) {
+        this.dato = dato;
+        this.siguiente = auxRecorrido;
     }
 
     public Nodo<Object> getAnterior() {

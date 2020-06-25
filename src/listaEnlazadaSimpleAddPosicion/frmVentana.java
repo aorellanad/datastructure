@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package listaEnlazadaSimpleERROR;
+package listaEnlazadaSimpleAddPosicion;
 
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
@@ -303,17 +303,19 @@ public class frmVentana extends javax.swing.JFrame {
     }//GEN-LAST:event_btnBusacarActionPerformed
 
     private void btnAddposicionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAddposicionActionPerformed
-       String cedula=txtCedula.getText();
-       String Nombre=txtNombre.getText();
-       String Apellido=txtApellido.getText();
-       int Edad=Integer.valueOf( txtEdad.getText());
-        int  posision = Integer.valueOf(JOptionPane.showInputDialog(null, "Ingrese Posision"));
-        //int confirm= JOptionPane.showConfirmDialog(null, "");
+        String cedula = txtCedula.getText();
+        String Nombre = txtNombre.getText();
+        String Apellido = txtApellido.getText();
+        int Edad = Integer.valueOf(txtEdad.getText());
+        String Direccion = txtDireccion.getText();
+        String Nivel = cmbNivel.getSelectedItem().toString();
+        
+        int posision = Integer.valueOf(JOptionPane.showInputDialog(null, "Ingrese Posision"));
         
         if (posision != -1) {
             
             if (!miLista.estaVacia() && (miLista.CuantosElementos()>posision) ) {
-                Estudiante dato=new Estudiante(cedula, Nombre, Apellido, Edad, "","");
+                Estudiante dato=new Estudiante(cedula, Nombre, Apellido, Edad, Direccion, Nivel);
                 
                 miLista.IntroducirEstudiante(posision, dato);
                 RefrescarTabla();

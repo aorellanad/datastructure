@@ -1,5 +1,6 @@
 package ListaEnlazadaSimple;
 import java.util.Scanner;
+
 public class Principal {
     public static void main(String[] args) {
         
@@ -124,8 +125,6 @@ public class Principal {
         }
         
     }
-    
-    
     private void TamanioLista(){
         System.out.println("Existen "+ Lista.CuantosElementos() + " elementos: ");
          ListarElementos();
