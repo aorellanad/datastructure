@@ -278,6 +278,7 @@ public class ListaEnlazada<Persona>{
         }
         return existe;//Si el dato existe contenido de la lista
     }
+    
     public void Mostrar(){//Muestra el contenido de la lista
         System.out.println("Contenido de la lista");
         System.out.println("======================");
