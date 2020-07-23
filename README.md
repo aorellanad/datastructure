@@ -10,6 +10,6 @@ this repo contains to exercises worked at tutorship of subject "Estructura de da
 - [x] Merge sort
 
 ## Search methods
-- [ ] Sequential search
-- [ ] Binary search
+- [x] Sequential search
+- [x] Binary search
 - [ ] Key transformation search
