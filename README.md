@@ -17,8 +17,8 @@ this repo contains to exercises worked at tutorship of subject "Estructura de da
 ## ADT (Abstract data type)
 
 ### List
-- [ ] Linked list
-- [ ] Doubly linked list
+- [x] Linked list
+- [x] Doubly linked list
 - [ ] Circular linked list
 - [ ] Circular doubly linked list
 
