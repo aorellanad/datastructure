@@ -4,7 +4,6 @@ this repo contains to exercises worked at tutorship of subject "Estructura de da
 ## Sort methods
 - [x] Bubble
 - [x] Direct selection
-- [x] Direct insertion
 - [x] Shell sort
 - [x] Quick sort
 - [x] Merge sort
